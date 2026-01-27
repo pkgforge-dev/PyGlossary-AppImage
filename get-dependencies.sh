@@ -10,7 +10,6 @@ pacman -Syu --noconfirm \
 	python-beautifulsoup4 \
 	python-gobject        \
 	python-lxml           \
-	python-lzo            \
 	python-marisa         \
 	python-mistune        \
 	python-polib          \
@@ -24,6 +23,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+make-aur-package python-lzo
 make-aur-package pyglossary
 
 # If the application needs to be manually built that has to be done down here
