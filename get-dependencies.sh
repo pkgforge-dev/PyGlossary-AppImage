@@ -6,8 +6,19 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-# pacman -Syu --noconfirm PACKAGESHERE
-
+pacman -Syu --noconfirm \
+	python-beautifulsoup4 \
+	python-gobject        \
+	python-lxml           \
+	python-lzo            \
+	python-marisa         \
+	python-mistune        \
+	python-polib          \
+	python-psutil         \
+	python-pygments       \
+	python-tqdm           \
+	python-yaml
+  
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
