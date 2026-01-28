@@ -15,6 +15,7 @@ pacman -Syu --noconfirm \
 	python-polib          \
 	python-psutil         \
 	python-pygments       \
+	python-pyicu          \
 	python-tqdm           \
 	python-yaml
   
